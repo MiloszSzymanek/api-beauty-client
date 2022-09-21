@@ -1,0 +1,107 @@
+.cartContainer {
+  background-color: white;
+  height: 95vh;
+  width: 25vw;
+  position: fixed;
+  right: 0;
+  margin-top: 5vh;
+  transform: translateX(100%);
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+  opacity: 1;
+  top: 0;
+  z-index: -6;
+  overflow: scroll;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoEmpty {
+  margin: auto;
+}
+
+.showCartContainer {
+  background-color: white;
+  height: 95vh;
+  width: 25vw;
+  position: fixed;
+  right: 0;
+  margin-top: 5vh;
+  transform: translateX(0);
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+  opacity: 1;
+  top: 0;
+  z-index: -6;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemInCart {
+  border: solid darkgray 1px;
+  border-collapse: collapse;
+  margin: 5%;
+  padding: 1% 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.itemPrice {
+  grid-column: 2/3;
+}
+
+.deleteItem {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.closeCartDiv {
+  position: fixed;
+  right: 0;
+  top: 0;
+  justify-content: flex-end;
+}
+
+.closeIcon {
+  cursor: pointer;
+}
+
+.cartImage {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.buyButton {
+  background-color: #c09b1c;
+  border: none;
+  font-size: 2em;
+  text-transform: lowercase;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+  letter-spacing: 3px;
+  width: 250px;
+  height: 70px;
+  color: white;
+  box-shadow: none;
+  margin: 30px auto;
+}
+
+.buyButton:active {
+
+  background-color: #fcedbc;
+  color: black;
+  border: solid 2px black;
+}
+
+.totalPrice {
+  display: flex;
+  flex-direction: column;
+}
+
+.totalPrice h3,
+p {
+  align-self: flex-end;
+}

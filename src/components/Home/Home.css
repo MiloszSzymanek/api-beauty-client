@@ -1,0 +1,69 @@
+.homeContainer{
+    margin: auto;
+    width: 1330px;
+    height: 95vh;
+   
+   
+}
+
+.firstBanner {
+    margin-top: 5vh;
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+
+.firstBannerText {
+    width: 30%;
+    border: solid 6px black;
+    background-color: #fcedbc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.firstBannerText > h1 {
+
+    margin-bottom: 10%;
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.firstBannerText > p {
+    margin-bottom: 70px;
+}
+
+
+
+
+
+.firstBannerImage {
+    width: 70%;
+    background-image: url(../../images/cosmetics-1063134.jpg);
+    background-position:center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+} 
+
+
+.firstBannerImage > h3 {
+
+    color: white;
+    background-color: black;
+    padding: 5px;
+    width: 40%;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 10% ;
+    margin-right: 10% ;
+    font-size: 2em;
+    
+}
