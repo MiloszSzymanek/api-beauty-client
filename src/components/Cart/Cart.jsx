@@ -4,10 +4,9 @@ import { ShopContext } from "../Context";
 
 import { GrClose } from "react-icons/gr";
 import { RiDeleteBin6Line } from "react-icons/ri";
-import Cookies from 'js-cookie';
 
 export default function Cart(props) {
-  const { cart, setCart, setQuantity } = useContext(ShopContext);
+  const { cart, setCart } = useContext(ShopContext);
 
   useEffect(() => {
     const data = window.localStorage.getItem("cartItems");

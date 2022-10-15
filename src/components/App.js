@@ -29,7 +29,7 @@ function App() {
     };
 
     getData();
-  }, []);
+  }, [loadProducts]);
 
   return (
     <div className="App">
