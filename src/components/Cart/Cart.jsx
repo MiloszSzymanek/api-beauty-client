@@ -9,9 +9,10 @@ export default function Cart(props) {
   const { cart, setCart } = useContext(ShopContext);
 
   useEffect(() => {
+    
     const data = window.localStorage.getItem("cartItems");
     if (data !== null) setCart(JSON.parse(data));
-  }, []);
+  }, [setCart]);
 
   useEffect(() => {
     window.localStorage.setItem("cartItems", JSON.stringify(cart));

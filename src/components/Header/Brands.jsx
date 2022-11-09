@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { ShopContext } from "../Context";
 
 export default function Brands(props) {
-  const { products, productsByBrand, brand } = useContext(ShopContext);
+  const { products, productsByBrand } = useContext(ShopContext);
 
   const [brandArr, setBrandArr] = useState([])
 
@@ -18,6 +18,7 @@ export default function Brands(props) {
     setBrandArr([...newArr])
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.bDrop] )
   
 

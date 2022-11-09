@@ -4,7 +4,7 @@ import "./Login.css"
 
 export default function Login(props) {
 
-    const [loginUser, setLoginUser] = useState({});
+    //const [loginUser, setLoginUser] = useState({});
     const [data, setData] = useState({
         email: "",
         password: "",
@@ -26,7 +26,7 @@ export default function Login(props) {
         
     
         if (response.data.success) {
-            setLoginUser({...response.data.user});
+            //setLoginUser({...response.data.user});
             props.closeModal(false)
           } 
     

@@ -19,6 +19,7 @@ export default function Categories(props) {
     setCategoriesArr([...newArr])
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.catDrop] )
   
 

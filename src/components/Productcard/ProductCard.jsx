@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import React from "react";
 import { ShopContext } from "../Context";
 import "./ProductCard.css";
@@ -9,6 +9,8 @@ export default function ProductCard() {
 
 useEffect(() => {
   setCartInfo(false);
+  
+  // eslint-disable-next-line react-hooks/exhaustive-deps
 }, [])
 
   return (
