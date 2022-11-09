@@ -18,7 +18,7 @@ function App() {
     const getData = async () => {
       try {
         const response = await axios.get(
-          "http://makeup-api.herokuapp.com/api/v1/products.json"
+          "https://makeup-api.herokuapp.com/api/v1/products.json"
         );
         console.log("response is", response.data);
 
